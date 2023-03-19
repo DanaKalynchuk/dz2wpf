@@ -1,0 +1,85 @@
+﻿<Window x:Class="dz2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dz2"
+        mc:Ignorable="d"
+        Title="Calculator" Height="353" Width="258.4">
+    <StackPanel Orientation="Vertical">
+        <TextBox x:Name="History" Height="30"
+                 TextAlignment="Right" IsReadOnly="True">
+           
+        </TextBox>
+        <TextBox x:Name="Naw" Height="40"  Margin="0,2,0,2" 
+                 TextAlignment="Right" IsReadOnly="True"
+                 FontSize="35" FontStyle="Normal" Foreground="Black" 
+                 FontStretch="ExtraCondensed" >
+ 
+        </TextBox>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions >
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Button x:Name="CE" Margin="2"  Content="CE"
+                    FontSize="30" Click="CE_Click"/>
+            <Button x:Name= "q7" Margin="2"  Grid.Row="1"
+                    Content="7" FontSize="30"
+                    Click="q7_Click"/>
+            <Button x:Name="q4" Margin="2"  Grid.Row="2"
+                    Content="4" FontSize="30"
+                    Click="q4_Click"/>
+            <Button x:Name="q1" Margin="2"  Grid.Row="3"
+                    Content="1" FontSize="30"
+                    Click="q1_Click"/>
+            <Button x:Name="point" Margin="2" Grid.Row="4"
+                    Content="." FontSize="30" Click="point_Click"/>
+
+            <Button x:Name="C" Margin="2" Grid.Column="1" 
+                    Content="C" FontSize="30" Click="C_Click"/>
+            <Button x:Name="q8" Margin="2"  Grid.Column="1" Grid.Row="1"
+                    Content="8" FontSize="30" Click="q8_Click"/>
+            <Button x:Name="q5" Margin="2"  Grid.Column="1" Grid.Row="2"
+                    Content="5" FontSize="30" Click="q5_Click"/>
+            <Button x:Name="q2" Margin="2"  Grid.Column="1" Grid.Row="3"
+                    Content="2" FontSize="30" Click="q2_Click"/>
+            <Button x:Name="q0" Margin="2"  Grid.Column="1" Grid.Row="4"
+                    Content="0" FontSize="30" Click="q0_Click"/>
+
+            <Button x:Name="Rem" Margin="2"  Grid.Column="2" 
+                    Content="&lt;" FontSize="30" Click="Rem_Click"/>
+            <Button x:Name="q9" Margin="2"  Grid.Column="2" Grid.Row="1"
+                    Content="9" FontSize="30" Click="q9_Click"/>
+            <Button x:Name="q6" Margin="2" Grid.Column="2" Grid.Row="2"
+                    Content="6" FontSize="30" Click="q6_Click"/>
+            <Button x:Name="q3" Margin="2" Grid.Column="2" Grid.Row="3"
+                    Content="3" FontSize="30" Click="q3_Click"/>
+            <Button x:Name="equal" Margin="2"  Grid.Column="2" Grid.Row="4"
+                    Content="=" FontSize="30"
+                    Grid.ColumnSpan="2" Click="equal_Click"/>
+
+            <Button x:Name="share" Margin="2"  Grid.Column="3" 
+                    Content="/" FontSize="30" Click="share_Click"/>
+            <Button x:Name="multiply" Margin="2"  Grid.Column="3" Grid.Row="1"
+                    Content="*" FontSize="30" Click="multiply_Click"/>
+            <Button x:Name="minus" Margin="2" Grid.Column="3" Grid.Row="2"
+                    Content="-" FontSize="30" Click="minus_Click"/>
+            <Button x:Name="plus" Margin="2"  Grid.Column="3" Grid.Row="3"
+                    Content="+" FontSize="30" Click="plus_Click"/>
+            
+
+        </Grid>
+
+    </StackPanel>
+   
+</Window>
